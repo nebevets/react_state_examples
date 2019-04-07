@@ -13,7 +13,7 @@ class ColorSquare extends Component{
   handleMouseEnter = () => {
     const {hovers} = this.state;
     let newHovers;
-    hovers > this.colorList.length
+    hovers >= this.colorList.length - 1
       ? newHovers = 0
       : newHovers = hovers + 1
     this.setState({
@@ -22,9 +22,9 @@ class ColorSquare extends Component{
     });
   }
   render(){
-    const {sqClass} = this.state;
+    const {hovers, sqClass} = this.state;
     return (
-      <div className={`square ${sqClass}`} onMouseEnter={this.handleMouseEnter}></div>
+      <div className={`square ${sqClass}`} onMouseEnter={this.handleMouseEnter}>{hovers}</div>
     );  
   }
 }
