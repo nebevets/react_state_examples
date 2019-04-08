@@ -1,9 +1,11 @@
 body {
   background-color: silver;
+  margin: 0;
+  box-sizing: border-box;
 }
 .square {
-  height: 50px;
-  width: 50px;
+  width: 20%;
+  height: 10vh;
   display: inline-block;
 }
 .aqua {
@@ -23,4 +25,9 @@ body {
 }
 .powderblue {
   background-color: powderblue;
+}
+.rainbowContainer{
+  width: 100vw;
+  height: 100vh;
+  background-color: aquamarine;
 }

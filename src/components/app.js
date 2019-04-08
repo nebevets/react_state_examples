@@ -1,12 +1,9 @@
 import React from 'react';
-import Rainbow from './rainbow';
+import Container from './rainbow';
 
-
-
-const App = () => (
-    <div className="example-container center">
-        <Rainbow />
+const App = () =>
+    <div className="rainbowContainer">
+        <Container />
     </div>
-);
 
 export default App;

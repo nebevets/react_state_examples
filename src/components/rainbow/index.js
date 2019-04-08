@@ -3,10 +3,18 @@ import './index.scss'
 import ColorSquare from './colorsquare';
 
 const colorList = ['aqua', 'darkGray', 'fuchsia', 'whiteSmoke', 'cornflowerblue', 'powderblue'];
+const generateSquares = (amount) => {
+  let count = 0;
+  const squaresGenerated = [];
+  while (count < amount){
+    squaresGenerated.push(<ColorSquare colorList={colorList} key={count++} />);
+  }
+  return squaresGenerated;
+};
 
-const Rainbow = () => 
+const Container = () =>
   <div>
-    {colorList.map(item => <ColorSquare colorList={colorList} key={item} />)}
+    {generateSquares(50)}
   </div>
 
-export default Rainbow;
+export default Container;

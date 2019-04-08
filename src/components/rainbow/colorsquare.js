@@ -22,9 +22,9 @@ class ColorSquare extends Component{
     });
   }
   render(){
-    const {hovers, sqClass} = this.state;
+    const {sqClass} = this.state;
     return (
-      <div className={`square ${sqClass}`} onMouseEnter={this.handleMouseEnter}>{hovers}</div>
+      <div className={`square ${sqClass}`} onMouseEnter={this.handleMouseEnter}>&nbsp;</div>
     );  
   }
 }
