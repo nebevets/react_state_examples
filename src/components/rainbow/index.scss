@@ -1,33 +1,12 @@
 body {
   background-color: silver;
-  margin: 0;
+  width: 640px;
+  margin: 5vh auto;
   box-sizing: border-box;
+  font-size: 0;
 }
 .square {
-  width: 20%;
-  height: 10vh;
+  width: 64px;
+  height: 64px;
   display: inline-block;
-}
-.aqua {
-  background-color: darkslategray;
-}
-.darkGray {
-  background-color: aqua;
-}
-.fuchsia {
-  background-color: darkmagenta;
-}
-.whiteSmoke {
-  background-color: whitesmoke;
-}
-.cornflowerblue {
-  background-color: cornflowerblue;
-}
-.powderblue {
-  background-color: powderblue;
-}
-.rainbowContainer{
-  width: 100vw;
-  height: 100vh;
-  background-color: aquamarine;
 }

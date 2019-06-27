@@ -1,30 +1,24 @@
 import React, {Component} from 'react';
 import './index.scss'
+import {randomColor} from './randcolor';
 
 class ColorSquare extends Component{
   constructor(props){
     super(props);
-    this.colorList = props.colorList;
     this.state = {
-      hovers: 0,
-      sqClass: 'aqua'
+      color: randomColor()
     }
   }
-  handleMouseEnter = () => {
-    const {hovers} = this.state;
-    let newHovers;
-    hovers >= this.colorList.length - 1
-      ? newHovers = 0
-      : newHovers = hovers + 1
+  handleMouseEnter(){
+    const newColor = randomColor();
     this.setState({
-      hovers: newHovers,
-      sqClass: this.colorList[newHovers]
+      color: newColor
     });
   }
   render(){
-    const {sqClass} = this.state;
+    const {color} = this.state;
     return (
-      <div className={`square ${sqClass}`} onMouseEnter={this.handleMouseEnter}>&nbsp;</div>
+      <div className="square" style={{'backgroundColor': color}} onMouseEnter={this.handleMouseEnter.bind(this)}></div>
     );  
   }
 }
