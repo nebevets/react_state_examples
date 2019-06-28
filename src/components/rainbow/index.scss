@@ -1,13 +1,19 @@
 body {
   background-color: silver;
   width: 640px;
-  margin: 5vh auto;
+  margin: auto;
   box-sizing: border-box;
   font-size: 0;
 }
+.rainbowContainer{
+  position: fixed;
+  width: 3vmax;
+  top: 10px;
+  right: 10px;
+}
 .square {
-  width: 64px;
-  height: 64px;
+  width: 3vmax;
+  height: 3vmax;
   display: inline-block;
   transition: background-color 0.75s ease-in;
 }

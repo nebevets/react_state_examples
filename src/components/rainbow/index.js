@@ -13,7 +13,7 @@ const generateSquares = (amount) => {
 
 const Container = () =>
   <div>
-    {generateSquares(100)}
+    {generateSquares(20)}
   </div>
 
 export default Container;
